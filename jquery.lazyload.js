@@ -45,7 +45,7 @@
                         /* Nothing. */
                 } else if (!$.belowthefold(this, settings) &&
                     !$.rightoffold(this, settings)) {
-                        $this.trigger("appear");
+                        $this.filter(':not(.sleep)').trigger("appear");
                         /* if we found an image we'll load, reset the counter */
                         counter = 0;
                 } else {
